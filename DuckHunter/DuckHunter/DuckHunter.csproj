@@ -110,6 +110,7 @@
   <ItemGroup>
     <Resource Include="Arvore.png" />
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />
+    <Resource Include="Pato.png" />
     <Content Include="Pato_Gritando.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
