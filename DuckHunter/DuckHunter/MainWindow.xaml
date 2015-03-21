@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DuckHunter"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="DuckHunter.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="372" Width="551" WindowState="Maximized" >
+        Title="MainWindow" Height="375" Width="551" WindowState="Maximized" >
     <Window.Resources>
         <Storyboard x:Key="Pato">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato1">
@@ -91,7 +91,7 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </MediaElement>
-        <Image x:Name="Grama_Sem_Fundo2_gif" Margin="-1.5,0,0.5,-4" Source="Grama_Sem_Fundo2.gif" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="80" VerticalAlignment="Bottom">
+        <Image x:Name="Grama_Sem_Fundo2_gif" Margin="-1.5,0,0.5,39" Source="Grama_Sem_Fundo2.gif" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="80" VerticalAlignment="Bottom">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -101,6 +101,8 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Height="43" Margin="425,8,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="label" Content="SCORE" Margin="0,2,6,0" FontSize="24" FontFamily="Snap ITC" HorizontalAlignment="Right" Width="111" Height="40" VerticalAlignment="Top" d:IsLocked="True"/>
+        <Rectangle Fill="#FFA1BF4B" Margin="-2,0,-1,-2" Stroke="Black" Height="42" VerticalAlignment="Bottom" d:IsLocked="True"/>
+        <Image x:Name="Arvore_png" Margin="0,0,-5.116,19.07" Source="Arvore.png" Stretch="Fill" Height="318.93" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="313.116"/>
     </Grid>
 </Window>
