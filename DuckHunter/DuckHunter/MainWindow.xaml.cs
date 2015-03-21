@@ -56,6 +56,28 @@ namespace DuckHunter
             Pato1.Position = new TimeSpan(0, 0, 0);
         }
 
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (Convert.ToInt32(Tiros.Content) > 0)
+            {
+                int var = Convert.ToInt32(Tiros.Content);
+                Tiros.Content = Convert.ToString(var - 1);
+            }
+            else
+            {
+                Reload.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Window_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (Convert.ToBoolean(Key.Space))
+            {
+                Tiros.Content = 8;
+                Reload.Visibility = Visibility.Hidden;
+            }
+        }
+
         /* public void Pato1_MediaEnded()
          {
              //Pato1.Stop();
@@ -63,7 +85,7 @@ namespace DuckHunter
              //Pato1.Visibility = Visibility.Hidden;
          }*/
 
-        
+
 
     }
 }

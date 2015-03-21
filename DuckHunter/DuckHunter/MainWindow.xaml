@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DuckHunter"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="DuckHunter.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="798" Width="1094" WindowState="Maximized" >
+        Title="MainWindow" Height="798" Width="1094" WindowState="Maximized" MouseLeftButtonDown="Window_MouseLeftButtonDown" TextInput="Window_TextInput" >
     <Window.Resources>
         <Storyboard x:Key="Pato">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato1">
@@ -114,7 +114,8 @@
         <Image x:Name="Pato_png_Copy6" Margin="374,11,668,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
         <Image x:Name="Pato_png_Copy7" Margin="332,11,710,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
         <Label x:Name="label_Copy" Content="HIT" Margin="221,3.5,768.5,0" FontSize="40" FontFamily="Snap ITC" HorizontalAlignment="Center" Width="96.5" Height="65.5" VerticalAlignment="Top"/>
-        <Label x:Name="label1" Content="SHOT" Margin="40.5,10.498,0,0" FontFamily="Segoe UI Black" FontSize="26.667" HorizontalAlignment="Left" Width="101.5" Height="59.5" VerticalAlignment="Top"/>
-        <Label x:Name="label1_Copy" Content="8" Margin="58,21.5,0,0" FontFamily="Segoe UI Black" FontSize="64" Foreground="Red" HorizontalAlignment="Left" Width="50.5" Height="95.5" VerticalAlignment="Top"/>
+        <Label x:Name="Shot" Content="SHOT" Margin="40.5,10.498,0,0" FontFamily="Segoe UI Black" FontSize="26.667" HorizontalAlignment="Left" Width="101.5" Height="59.5" VerticalAlignment="Top"/>
+        <Label x:Name="Tiros" Content="8" Margin="58,21.5,0,0" FontFamily="Segoe UI Black" FontSize="64" Foreground="Red" HorizontalAlignment="Left" Width="126.5" Height="95.5" VerticalAlignment="Top"/>
+        <Label x:Name="Reload" Content="RELOAD" Margin="20,97.5,0,0" FontFamily="Segoe UI Black" FontSize="32" Foreground="Red" HorizontalAlignment="Left" Width="140.5" Height="51.5" VerticalAlignment="Top" Visibility="Hidden"/>
     </Grid>
 </Window>
