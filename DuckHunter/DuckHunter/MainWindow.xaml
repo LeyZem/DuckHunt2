@@ -1,0 +1,106 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckHunter"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="DuckHunter.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="372" Width="551" WindowState="Maximized" >
+    <Window.Resources>
+        <Storyboard x:Key="Pato">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-51.932"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1258.8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="36.309"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-1083.941"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.347"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-28.891"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-28.891"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.881"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.218"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="402"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-212.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Explosao">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Grama_Sem_Fundo2_gif">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.998"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Grama_Sem_Fundo2_gif">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(MediaElement.Volume)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Pato}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Margin="1,-1,-1,2" Background="#FF43E4FB">
+        <MediaElement x:Name="Explosao" LoadedBehavior="Play" Source="file://E:\C\Imagens\explosivo_fundo_azul.gif" Margin="144.526,654.397,326.178,-389.72" RenderTransformOrigin="0.5,0.5" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.622"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato1" LoadedBehavior="Play" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="-94.119,0,0,-140.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato1_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+            <i:Interaction.Triggers>
+                <i:EventTrigger >
+                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </MediaElement>
+        <Image x:Name="Grama_Sem_Fundo2_gif" Margin="-1.5,0,0.5,-4" Source="Grama_Sem_Fundo2.gif" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="80" VerticalAlignment="Bottom">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Height="43" Margin="425,8,0,0" VerticalAlignment="Top" Width="105"/>
+    </Grid>
+</Window>
