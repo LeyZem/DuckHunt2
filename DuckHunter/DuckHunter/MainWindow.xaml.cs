@@ -35,7 +35,7 @@ namespace DuckHunter
 
         public void Pato1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            Pato2.LoadedBehavior = MediaState.Play;
             Pato1.Source = Explosao.Source;
             Pato1.Volume = 0;
             cont++;
