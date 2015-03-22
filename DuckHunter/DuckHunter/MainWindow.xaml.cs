@@ -38,6 +38,7 @@ namespace DuckHunter
             //Pato1.Visibility = Visibility.Hidden;
             Pato1.Source = Explosao.Source;
             Pato1.IsMuted = true;
+            sb_Patinho1_BeginStoryboard.Storyboard.Begin();
             //Explosao.Volume = '0.0';
             
            // Pato1.LoadedBehavior = MediaState.Manual;

@@ -59,10 +59,100 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.5"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="sb_Patinho1" AutoReverse="False" >
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho1">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22.312"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho4">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho4">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho5">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho5">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho6">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho6">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho7">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho7">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho8">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho8">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho9">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho9">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sb_Patinho10">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Patinho10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Patinho10">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
             <BeginStoryboard Storyboard="{StaticResource Pato}"/>
+            <BeginStoryboard x:Name="sb_Patinho1_BeginStoryboard" Storyboard="{StaticResource sb_Patinho1}"/>
+            <BeginStoryboard x:Name="sb_Patinho2_BeginStoryboard" Storyboard="{StaticResource sb_Patinho2}"/>
+            <BeginStoryboard x:Name="sb_Patinho3_BeginStoryboard" Storyboard="{StaticResource sb_Patinho3}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho4}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho5}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho6}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho7}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho8}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho9}"/>
+            <BeginStoryboard Storyboard="{StaticResource sb_Patinho10}"/>
         </EventTrigger>
     </Window.Triggers>
     <Grid Margin="1,-1,-1,2" Background="#FF43E4FB">
@@ -104,18 +194,109 @@
         <Label x:Name="label" Content="SCORE" Margin="0,5,6,0" FontSize="33.333" FontFamily="Snap ITC" HorizontalAlignment="Right" Width="153" Height="49" VerticalAlignment="Top"/>
         <Rectangle Fill="#FFA1BF4B" Margin="-2,0,-1,-2" Stroke="Black" Height="42" VerticalAlignment="Bottom" d:IsLocked="True"/>
         <Image x:Name="Arvore_png" Margin="0,0,15.884,10.07" Source="Arvore.png" Stretch="Fill" Height="534.93" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="508.116"/>
-        <Image x:Name="Pato_png" Margin="620,11,422,0" Source="Pato.png" Stretch="Fill" HorizontalAlignment="Center" Width="44" Height="44" VerticalAlignment="Top"/>
-        <Image x:Name="Pato_png_Copy" Margin="578,11,464,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
-        <Image x:Name="Pato_png_Copy1" Margin="536,11,506,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
-        <Image x:Name="Pato_png_Copy2" Margin="496,11,546,0" Source="Pato.png" Stretch="Fill" HorizontalAlignment="Center" Width="44" Height="44" VerticalAlignment="Top"/>
-        <Image x:Name="Pato_png_Copy3" Margin="456,11,586,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
-        <Image x:Name="Pato_png_Copy4" Margin="414,11,628,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
-        <Image x:Name="Pato_png_Copy5" Margin="660,11,382,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
-        <Image x:Name="Pato_png_Copy6" Margin="374,11,668,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
-        <Image x:Name="Pato_png_Copy7" Margin="332,11,710,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44"/>
+        <Image x:Name="Patinho8" Margin="620,11,422,0" Source="Pato.png" Stretch="Fill" HorizontalAlignment="Center" Width="44" Height="44" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho7" Margin="578,11,464,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho6" Margin="536,11,506,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho5" Margin="496,11,546,0" Source="Pato.png" Stretch="Fill" HorizontalAlignment="Center" Width="44" Height="44" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho4" Margin="456,11,586,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho3" Margin="414,11,628,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho9" Margin="660,11,382,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho2" Margin="374,11,668,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Patinho1" Margin="332,11,710,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
         <Label x:Name="label_Copy" Content="HIT" Margin="221,3.5,768.5,0" FontSize="40" FontFamily="Snap ITC" HorizontalAlignment="Center" Width="96.5" Height="65.5" VerticalAlignment="Top"/>
         <Label x:Name="Shot" Content="SHOT" Margin="40.5,10.498,0,0" FontFamily="Segoe UI Black" FontSize="26.667" HorizontalAlignment="Left" Width="101.5" Height="59.5" VerticalAlignment="Top"/>
         <Label x:Name="Tiros" Content="8" Margin="58,21.5,0,0" FontFamily="Segoe UI Black" FontSize="64" Foreground="Red" HorizontalAlignment="Left" Width="126.5" Height="95.5" VerticalAlignment="Top"/>
         <Label x:Name="Reload" Content="RELOAD" Margin="20,97.5,0,0" FontFamily="Segoe UI Black" FontSize="32" Foreground="Red" HorizontalAlignment="Left" Width="140.5" Height="51.5" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Image x:Name="Patinho10" Margin="701.125,11,340.875,0" Source="Pato.png" Stretch="Fill" Height="44" VerticalAlignment="Top" HorizontalAlignment="Center" Width="44" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Window>
