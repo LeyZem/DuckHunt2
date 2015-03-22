@@ -3,8 +3,8 @@
 Trabalho bimestral de Programação em C# .NET com Design em WPF.
 
 
-# Equipe
+## Equipe
 
 Cristiano Masiero
-Fabricio Rodrigues
-Thiago Diniz
+<br>Fabricio Rodrigues
+<br>Thiago Diniz
