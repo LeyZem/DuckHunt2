@@ -37,7 +37,7 @@ namespace DuckHunter
         {
 
             Pato1.Source = Explosao.Source;
-            Pato1.IsMuted = true;
+            Pato1.Volume = 0;
             cont++;
             if (cont > 0)
             {
@@ -57,7 +57,7 @@ namespace DuckHunter
         {
 
             Pato2.Source = Explosao.Source;
-            Pato2.IsMuted = true;
+            Pato2.Volume = 0;
             cont++;
             if (cont > 1)
             {
