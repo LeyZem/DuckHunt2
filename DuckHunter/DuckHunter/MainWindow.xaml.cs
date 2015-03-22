@@ -26,35 +26,50 @@ namespace DuckHunter
            // Tocar_Som();
         }
 
-      //  private void Tocar_Som()
-     // {
-    //        SoundPlayerAction som = new SoundPlayerAction("Patos_no_Lago";  @"E:\C\DuckHunter\Sons\Patos_no_Lago.wav");
-   //         som.Source {; @"E:\C\DuckHunter\Sons\Patos_no_Lago.wav" };
-  //    }
+        //  private void Tocar_Som()
+        // {
+        //        SoundPlayerAction som = new SoundPlayerAction("Patos_no_Lago";  @"E:\C\DuckHunter\Sons\Patos_no_Lago.wav");
+        //         som.Source {; @"E:\C\DuckHunter\Sons\Patos_no_Lago.wav" };
+        //    }
+        int cont = 0;
 
         public void Pato1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
-            //Pato1.Visibility = Visibility.Hidden;
             Pato1.Source = Explosao.Source;
             Pato1.IsMuted = true;
-            sb_Patinho1_BeginStoryboard.Storyboard.Begin();
-            //Explosao.Volume = '0.0';
-            
-           // Pato1.LoadedBehavior = MediaState.Manual;
+            cont++;
+            if (cont > 0)
+            {
+                sb_Patinho1_BeginStoryboard.Storyboard.Begin();
+            }
+
+            // Pato1.LoadedBehavior = MediaState.Manual;
             for (int i = 0; i < 90000000; i++)
             {
 
             }
             Pato1.Visibility = Visibility.Hidden;
-            //Pato1_MediaEnded();
-
         }
 
-        public void Pato1_Reinicia()
+
+        public void Pato2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            // onde mediaElementVideo é o component MediaElement
-            Pato1.Position = new TimeSpan(0, 0, 0);
+
+            Pato2.Source = Explosao.Source;
+            Pato2.IsMuted = true;
+            cont++;
+            if (cont > 1)
+            {
+                sb_Patinho2_BeginStoryboard.Storyboard.Begin();
+            }
+
+            // Pato1.LoadedBehavior = MediaState.Manual;
+            for (int i = 0; i < 90000000; i++)
+            {
+
+            }
+            Pato2.Visibility = Visibility.Hidden;
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
