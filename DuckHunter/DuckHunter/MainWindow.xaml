@@ -149,10 +149,23 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:11" Value="-1799"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="Pato3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="178.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.9" Value="-877.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Pato3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.9" Value="-1046"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            
             <BeginStoryboard x:Name="Pato1_BeginStoryboard" Storyboard="{StaticResource Pato1}"/>
+            <BeginStoryboard x:Name="Pato3_BeginStoryboard" Storyboard="{StaticResource Pato3}"/>
+          
             <BeginStoryboard x:Name="sb_Patinho1_BeginStoryboard" Storyboard="{StaticResource sb_Patinho1}"/>
             <BeginStoryboard x:Name="sb_Patinho2_BeginStoryboard" Storyboard="{StaticResource sb_Patinho2}"/>
             <BeginStoryboard x:Name="sb_Patinho3_BeginStoryboard" Storyboard="{StaticResource sb_Patinho3}"/>
@@ -174,10 +187,29 @@
             <PauseStoryboard BeginStoryboardName="sb_Patinho8_BeginStoryboard"></PauseStoryboard>
             <PauseStoryboard BeginStoryboardName="sb_Patinho9_BeginStoryboard"></PauseStoryboard>
             <PauseStoryboard BeginStoryboardName="sb_Patinho10_BeginStoryboard"></PauseStoryboard>
+            
+            <PauseStoryboard BeginStoryboardName="Pato3_BeginStoryboard"></PauseStoryboard>
+
             <BeginStoryboard Storyboard="{StaticResource Pato2}"/>
+            
         </EventTrigger>
     </Window.Triggers>
     <Grid Margin="1,-1,-1,2" Background="#FF43E4FB">
+        <MediaElement x:Name="Pato3" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="778.881,0,0,-149.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato3_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+            <i:Interaction.Triggers>
+                <i:EventTrigger >
+                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </MediaElement>
         <MediaElement x:Name="Pato2" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="385.881,0,0,-140.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato2_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" >
             <MediaElement.RenderTransform>
                 <TransformGroup>
@@ -228,7 +260,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label x:Name="label" Content="SCORE" Margin="0,5,6,0" FontSize="33.333" FontFamily="Snap ITC" HorizontalAlignment="Right" Width="153" Height="49" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="SCORE" Margin="0,11,166.5,0" FontSize="33.333" FontFamily="Snap ITC" HorizontalAlignment="Right" Width="153" Height="49" VerticalAlignment="Top"/>
         <Rectangle Fill="#FFA1BF4B" Margin="-2,0,-1,-2" Stroke="Black" Height="42" VerticalAlignment="Bottom" d:IsLocked="True"/>
         <Image x:Name="Patinho8" Margin="620,11,422,0" Source="Pato.png" Stretch="Fill" HorizontalAlignment="Center" Width="44" Height="44" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
@@ -335,5 +367,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Label x:Name="lblScore" Content="0" Height="84.5" Margin="0,-14.502,18.384,0" VerticalAlignment="Top" FontSize="64" FontFamily="Segoe UI Black" Foreground="Red" BorderBrush="Black" HorizontalAlignment="Right" Width="143.116"/>
     </Grid>
 </Window>
