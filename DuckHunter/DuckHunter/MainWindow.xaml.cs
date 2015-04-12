@@ -24,8 +24,12 @@ namespace DuckHunter
         {
             InitializeComponent();
             // Tocar_Som();
-            var myCursor = new Cursor(@"C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\MiraDuckHunt.ani");
-            this.Cursor = myCursor;
+            //var myCursor = new Cursor();
+
+
+            
+            
+            //this.Cursor;
         }
 
         //  private void Tocar_Som()
