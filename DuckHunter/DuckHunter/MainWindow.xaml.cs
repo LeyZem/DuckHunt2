@@ -24,12 +24,17 @@ namespace DuckHunter
         {
             InitializeComponent();
             // Tocar_Som();
+<<<<<<< HEAD
             //var myCursor = new Cursor();
 
 
             
             
             //this.Cursor;
+=======
+            var myCursor = new Cursor(@"C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\MiraDuckHunt.ani");
+            this.Cursor = myCursor;
+>>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;
         }
 
         //  private void Tocar_Som()
