@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "515BF48912A9C5A9360958FE2F6442AA"
+=======
+﻿#pragma checksum "..\..\MainWindow.xaml" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "8820960113AD895A7077F48A9F39BD6D"
+>>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;
 =======
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{406ea660-64cf-4c82-b6f0-42d48172a799}" "8820960113AD895A7077F48A9F39BD6D"
 >>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;

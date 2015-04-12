@@ -112,8 +112,11 @@
     <Resource Include="Plants-20.jpg" />
     <Resource Include="Arvore.png" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Resource Include="duckhunt.ico" />
     <Resource Include="Grama.png" />
+=======
+>>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;
 =======
 >>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />
