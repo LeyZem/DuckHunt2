@@ -112,11 +112,14 @@
     <Resource Include="explosivo_fundo_azul.gif" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Plants-20.jpg" />
     <Resource Include="Arvore.png" />
     <Resource Include="duckhunt.ico" />
+    <Resource Include="Grama.png" />
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />
     <Resource Include="Pato.png" />
     <Resource Include="Mira.png" />
+    <None Include="PatoFundoAzul.gif" />
     <Content Include="Pato_Gritando.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
