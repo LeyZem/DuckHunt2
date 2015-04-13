@@ -1,0 +1,15 @@
+﻿<Window x:Class="DuckHunter.Principal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckHunter"
+        mc:Ignorable="d"
+        Title="Principal" Height="677.5" Width="702.5">
+    <Grid Margin="0,0,2,2">
+        <Grid.Background>
+            <ImageBrush ImageSource="Duck_Hunt_(VS).png"/>
+        </Grid.Background>
+
+    </Grid>
+</Window>

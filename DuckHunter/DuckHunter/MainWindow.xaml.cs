@@ -28,9 +28,13 @@ namespace DuckHunter
             var myCursor = new Cursor(@"C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\MiraDuckHunt.ani");
             this.Cursor = myCursor;
 
+            //Pato1.Position = TimeSpan.FromSeconds(1);
+
             
 
         }
+        
+        
 
         //  private void Tocar_Som()
         // {
@@ -39,8 +43,11 @@ namespace DuckHunter
         //    }
         int cont = 0;
 
+        int conte = 0;
 
 
+        
+        
 
 
         //>>>>>>>>>>>>   PATO 1   <<<<<<<<<<<<<
@@ -50,35 +57,40 @@ namespace DuckHunter
 
         public void Pato1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
-            //EFETUA O PLAY DO SEGUNDO PATO
-            Pato2.LoadedBehavior = MediaState.Play;
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-            Pato1.Source = Explosao.Source;
-            Pato1.Volume = 0;
-            cont++;
-            
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 0)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho1_BeginStoryboard.Storyboard.Begin();
+                
+                //EFETUA O PLAY DO SEGUNDO PATO
+                Pato2.LoadedBehavior = MediaState.Play;
+                Pato2_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+                Pato1.Source = Explosao.Source;
+                Pato1.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 0)
+                {
+                    sb_Patinho1_BeginStoryboard.Storyboard.Begin();
+                }
+
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato1.Visibility = Visibility.Hidden;
             }
-
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato1.Visibility = Visibility.Hidden;
         }
 
 
@@ -92,36 +104,40 @@ namespace DuckHunter
 
         public void Pato2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO TERCEIRO PATO
-            Pato3.LoadedBehavior = MediaState.Play;
-            Pato3_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato2.Source = Explosao.Source;
-            Pato2.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho2_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO TERCEIRO PATO
+                Pato3.LoadedBehavior = MediaState.Play;
+                Pato3_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato2.Source = Explosao.Source;
+                Pato2.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho2_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato2.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato2.Visibility = Visibility.Hidden;
         }
 
 
@@ -132,6 +148,9 @@ namespace DuckHunter
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+
+            
+
             //DIMINUI A QUANTIDADE DE TIROS AO CLICAR O MOUSE
             //VERIFICA SE O CARREGADOR ESTÁ VAZIO
 
@@ -143,6 +162,7 @@ namespace DuckHunter
             else
             {
                 Reload.Visibility = Visibility.Visible;
+                conte = 1;
             }
         }
 
@@ -161,6 +181,7 @@ namespace DuckHunter
             {
                 Tiros.Content = 8;
                 Reload.Visibility = Visibility.Hidden;
+                conte = 0;
             }
         }
 
@@ -174,36 +195,41 @@ namespace DuckHunter
 
         private void Pato3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO QUARTO PATO
-            Pato4.LoadedBehavior = MediaState.Play;
-            Pato4_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato3.Source = Explosao.Source;
-            Pato3.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
-            {
-                sb_Patinho3_BeginStoryboard.Storyboard.Begin();
-            }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
 
+                //EFETUA O PLAY DO QUARTO PATO
+                Pato4.LoadedBehavior = MediaState.Play;
+                Pato4_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato3.Source = Explosao.Source;
+                Pato3.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho3_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato3.Visibility = Visibility.Hidden;
             }
-            Pato3.Visibility = Visibility.Hidden;
         }
 
 
@@ -216,36 +242,40 @@ namespace DuckHunter
 
         private void Pato4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO Quinto PATO
-            Pato5.LoadedBehavior = MediaState.Play;
-            Pato5_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato4.Source = Explosao.Source;
-            Pato4.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho4_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO Quinto PATO
+                Pato5.LoadedBehavior = MediaState.Play;
+                Pato5_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato4.Source = Explosao.Source;
+                Pato4.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho4_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato4.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato4.Visibility = Visibility.Hidden;
         }
 
 
@@ -264,36 +294,40 @@ namespace DuckHunter
 
         private void Pato5_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO SEXTO PATO
-            Pato6.LoadedBehavior = MediaState.Play;
-            Pato6_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato5.Source = Explosao.Source;
-            Pato5.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho5_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO SEXTO PATO
+                Pato6.LoadedBehavior = MediaState.Play;
+                Pato6_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato5.Source = Explosao.Source;
+                Pato5.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho5_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato5.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato5.Visibility = Visibility.Hidden;
         }
 
 
@@ -308,36 +342,40 @@ namespace DuckHunter
 
         private void Pato6_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO SÉTIMO PATO
-            Pato7.LoadedBehavior = MediaState.Play;
-            Pato7_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato6.Source = Explosao.Source;
-            Pato6.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho6_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO SÉTIMO PATO
+                Pato7.LoadedBehavior = MediaState.Play;
+                Pato7_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato6.Source = Explosao.Source;
+                Pato6.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho6_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato6.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato6.Visibility = Visibility.Hidden;
         }
 
 
@@ -354,36 +392,40 @@ namespace DuckHunter
 
         private void Pato7_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO OITAVO PATO
-            Pato8.LoadedBehavior = MediaState.Play;
-            Pato8_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato7.Source = Explosao.Source;
-            Pato7.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho7_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO OITAVO PATO
+                Pato8.LoadedBehavior = MediaState.Play;
+                Pato8_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato7.Source = Explosao.Source;
+                Pato7.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho7_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato7.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato7.Visibility = Visibility.Hidden;
         }
 
 
@@ -401,36 +443,40 @@ namespace DuckHunter
 
         private void Pato8_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO NONO PATO
-            Pato9.LoadedBehavior = MediaState.Play;
-            Pato9_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato8.Source = Explosao.Source;
-            Pato8.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho8_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO NONO PATO
+                Pato9.LoadedBehavior = MediaState.Play;
+                Pato9_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato8.Source = Explosao.Source;
+                Pato8.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho8_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato8.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato8.Visibility = Visibility.Hidden;
         }
 
 
@@ -451,36 +497,40 @@ namespace DuckHunter
 
         private void Pato9_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO DÉCIMO PATO
-            Pato10.LoadedBehavior = MediaState.Play;
-            Pato10_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato9.Source = Explosao.Source;
-            Pato9.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho9_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO DÉCIMO PATO
+                Pato10.LoadedBehavior = MediaState.Play;
+                Pato10_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato9.Source = Explosao.Source;
+                Pato9.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho9_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato9.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato9.Visibility = Visibility.Hidden;
         }
 
 
@@ -496,36 +546,40 @@ namespace DuckHunter
 
         private void Pato10_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //EFETUA O PLAY DO DÉCIMO PATO
-            //Pato10.LoadedBehavior = MediaState.Play;
-            //Pato10_BeginStoryboard.Storyboard.Begin();
-
-            //PATO RECEBE A IMAGEM DA EXPLOSÃO
-
-            Pato10.Source = Explosao.Source;
-            Pato10.Volume = 0;
-            cont++;
-
-            //CONTAGEM DE SCORE
-            int var = Convert.ToInt32(lblScore.Content);
-            lblScore.Content = Convert.ToString(var + 1);
-
-            //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
-
-            if (cont > 1)
+            //VERIFICA SE A ARMA FOI RECARREGADA
+            if (conte == 0)
             {
-                sb_Patinho10_BeginStoryboard.Storyboard.Begin();
+                //EFETUA O PLAY DO DÉCIMO PATO
+                //Pato10.LoadedBehavior = MediaState.Play;
+                //Pato10_BeginStoryboard.Storyboard.Begin();
+
+                //PATO RECEBE A IMAGEM DA EXPLOSÃO
+
+                Pato10.Source = Explosao.Source;
+                Pato10.Volume = 0;
+                cont++;
+
+                //CONTAGEM DE SCORE
+                int var = Convert.ToInt32(lblScore.Content);
+                lblScore.Content = Convert.ToString(var + 1);
+
+                //EXECUTA A ANIMAÇÃO DO PATINHO AMARELO
+
+                if (cont > 1)
+                {
+                    sb_Patinho10_BeginStoryboard.Storyboard.Begin();
+                }
+
+                //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
+
+
+                // Pato1.LoadedBehavior = MediaState.Manual;
+                for (int i = 0; i < 90000000; i++)
+                {
+
+                }
+                Pato10.Visibility = Visibility.Hidden;
             }
-
-            //INCREMENTA TEMPO PARA A EXPLOSÃO TERMINAR
-
-
-            // Pato1.LoadedBehavior = MediaState.Manual;
-            for (int i = 0; i < 90000000; i++)
-            {
-
-            }
-            Pato10.Visibility = Visibility.Hidden;
         }
 
         private void Pato1_Initialized(object sender, EventArgs e)
@@ -538,6 +592,8 @@ namespace DuckHunter
             //}
 
         }
+
+       
 
         private void Pato1_Loaded(object sender, RoutedEventArgs e)
         {
@@ -552,14 +608,17 @@ namespace DuckHunter
          //   }
         }
 
+        private void Pato1_BufferingEnded(object sender, RoutedEventArgs e)
+        {
+            
+        }
 
 
-        /* public void Pato1_MediaEnded()
-         {
-             //Pato1.Stop();
-             Pato1.Position = new TimeSpan(0, 0, 2);
-             //Pato1.Visibility = Visibility.Hidden;
-         }*/
+
+        public void Pato1_MediaEnded()
+        {
+            
+        }
 
 
 

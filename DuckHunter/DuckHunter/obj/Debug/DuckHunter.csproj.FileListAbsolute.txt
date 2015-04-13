@@ -123,3 +123,5 @@ C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\MainWindow.baml
 C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\DuckHunter.g.resources
 C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\DuckHunter.Properties.Resources.resources
 C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\DuckHunter.csproj.GenerateResource.Cache
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\Principal.g.cs
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\Principal.baml

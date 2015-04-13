@@ -67,8 +67,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Principal.xaml.cs">
+      <DependentUpon>Principal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -110,8 +117,19 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Arvore.png" />
+    <Resource Include="Duck_Hunt_%28VS%29.png" />
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />
     <Resource Include="Pato.png" />
+    <Resource Include="P5 05.png" />
+    <Resource Include="P6 06.png" />
+    <Resource Include="P7 07.png" />
+    <Resource Include="P8 08.png" />
+    <Resource Include="P9 09.png" />
+    <Resource Include="P10 10.png" />
+    <Resource Include="P1 01.png" />
+    <Resource Include="P2 02.png" />
+    <Resource Include="P3 03.png" />
+    <Resource Include="P4 04.png" />
     <Content Include="Pato_Gritando.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
