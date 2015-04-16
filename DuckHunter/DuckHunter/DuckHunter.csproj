@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -55,6 +56,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Score.xaml.cs">
+      <DependentUpon>Score.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.xaml.cs">
+      <DependentUpon>Sobre.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,8 +74,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Score.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sobre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -86,7 +108,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="MiraDuckHunt.ani" />
+    <None Include="MiraDuckHunt.ani" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +119,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Duck_Hunt_%28VS%29.png" />
     <Resource Include="f-6-pond.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -109,20 +132,25 @@
     <Resource Include="explosivo_fundo_azul.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Plants-20.jpg" />
+    <None Include="Resources\Tiro.wav" />
+    <None Include="Resources\SemMunicao.wav" />
+    <None Include="Resources\Recarregar.wav" />
     <Resource Include="Arvore.png" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Resource Include="duckhunt.ico" />
-    <Resource Include="Grama.png" />
-=======
->>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;
-=======
->>>>>>> parent of 810c7f3... Icone adicionado; Som dos patos no lago adicionado;
+    <Resource Include="CAPA.jpg" />
+    <Resource Include="DH.jpg" />
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />
     <Resource Include="Pato.png" />
-    <Resource Include="Mira.png" />
-    <None Include="PatoFundoAzul.gif" />
+    <Resource Include="P5 05.png" />
+    <Resource Include="P6 06.png" />
+    <Resource Include="P7 07.png" />
+    <Resource Include="P8 08.png" />
+    <Resource Include="P9 09.png" />
+    <Resource Include="P10 10.png" />
+    <Resource Include="P1 01.png" />
+    <Resource Include="P2 02.png" />
+    <Resource Include="P3 03.png" />
+    <Resource Include="P4 04.png" />
+    <Content Include="Patos_No_Lago.wav" />
     <Content Include="Pato_Gritando.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

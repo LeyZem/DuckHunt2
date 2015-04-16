@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckHunter"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Class="DuckHunter.Score"
+        mc:Ignorable="d"
+        Title="Score" Height="567" Width="410" WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="CAPA_jpg" Grid.ColumnSpan="2" Margin="1.5,6,8.5,294" Source="CAPA.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Width="400" Height="300">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.155"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label x:Name="lblReiniciar" Grid.ColumnSpan="2" Content="REINICIAR" Margin="125,0,130.99,107.339" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" d:LayoutOverrides="VerticalAlignment, Width" MouseLeftButtonDown="lblReiniciar_MouseLeftButtonDown"/>
+        <Label x:Name="lblQuit" Grid.ColumnSpan="2" Content="QUIT" Margin="154,0,0,10" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblQuit_MouseLeftButtonDown" HorizontalAlignment="Left" Width="95.917" RenderTransformOrigin="0.74,2.232"/>
+        <Label x:Name="lblScoreMessage" Grid.ColumnSpan="2" Content="SCORE" Margin="107,0,204.17,191.339" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" d:LayoutOverrides="VerticalAlignment, Width"/>
+        <Label x:Name="lblScoreCount" Grid.ColumnSpan="2" Content="SCORE" Margin="0,0,100.34,191.339" VerticalAlignment="Bottom" Foreground="#FFFFFFFF" FontFamily="Showcard Gothic" FontSize="29.333" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" RenderTransformOrigin="0.081,0.619"/>
+
+    </Grid>
+</Window>

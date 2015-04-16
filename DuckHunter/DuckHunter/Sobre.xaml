@@ -1,0 +1,20 @@
+﻿<Window x:Class="DuckHunter.Sobre"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckHunter"
+        mc:Ignorable="d"
+        Title="Sobre" Height="523.125" Width="384" WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+    <Grid  Background="Black">
+        <Image x:Name="DH_jpg" Height="141" Margin="64,10,64,0" Source="DH.jpg" Stretch="Fill" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Trabalho bimestral de Programação" HorizontalAlignment="Left" Margin="30.103,177.999,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="Showcard Gothic" FontSize="16"/>
+        <Label x:Name="label_Copy" Content="Em C# .NET" Margin="146.393,212.802,64,0" Background="{x:Null}" Foreground="White" d:LayoutOverrides="VerticalAlignment" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="16"/>
+        <Label x:Name="label_Copy1" Content="Equipe:" Margin="161.886,0,149.917,184.466" Background="{x:Null}" Foreground="White" FontFamily="Showcard Gothic" FontSize="16" d:LayoutOverrides="Width" RenderTransformOrigin="2.852,1.233" VerticalAlignment="Bottom"/>
+        <Label x:Name="label_Copy2" Content="Cristiano Masiero" Margin="116.603,0,104.29,149.663" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="White" FontFamily="Showcard Gothic" FontSize="16" d:LayoutOverrides="Width"/>
+        <Label x:Name="label_Copy3" Content="Fabricio Rodrigues " Margin="106.103,0,99.36,119.86" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="White" FontFamily="Showcard Gothic" FontSize="16" d:LayoutOverrides="Width"/>
+        <Label x:Name="label_Copy4" Content="Thiago Diniz" Margin="140.393,0,126.417,90.056" VerticalAlignment="Bottom" Background="{x:Null}" Foreground="White" FontFamily="Showcard Gothic" FontSize="16" d:LayoutOverrides="Width" RenderTransformOrigin="0.897,0.578"/>
+        <Label x:Name="label_Copy5" Content="Com Design em WPF" Margin="112.103,247.605,98.29,0" Background="{x:Null}" Foreground="White" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontSize="16" d:LayoutOverrides="VerticalAlignment"/>
+        <Label x:Name="lblOkSobre" Content="OK" Margin="173.886,0,137.917,10" Background="{x:Null}" Foreground="White" FontFamily="Showcard Gothic" FontSize="29.333" RenderTransformOrigin="2.852,1.233" VerticalAlignment="Bottom" d:LayoutOverrides="Width" MouseLeftButtonDown="lblOkSobre_MouseLeftButtonDown"/>
+    </Grid>
+</Window>
