@@ -125,3 +125,15 @@ C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\DuckHunter.Propertie
 C:\DuckHunterGame\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\DuckHunter.csproj.GenerateResource.Cache
 C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\Principal.g.cs
 C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\Principal.baml
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\obj\Debug\App.baml
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\de\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\en\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\es\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\fr\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\it\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\ja\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\ko\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\ru\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Interactivity.resources.dll
+C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Interactivity.resources.dll

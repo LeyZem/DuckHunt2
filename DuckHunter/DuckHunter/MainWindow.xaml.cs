@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
+using System.Diagnostics;
 
 namespace DuckHunter
 {
@@ -60,14 +61,19 @@ namespace DuckHunter
             //VERIFICA SE A ARMA FOI RECARREGADA
             if (conte == 0)
             {
+
                 
+
+
                 //EFETUA O PLAY DO SEGUNDO PATO
                 Pato2.LoadedBehavior = MediaState.Play;
                 Pato2_BeginStoryboard.Storyboard.Begin();
+                Pato2.Volume = Convert.ToInt32("0");
+                
 
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
                 Pato1.Source = Explosao.Source;
-                Pato1.Volume = 0;
+                Pato1.Volume = Convert.ToInt32("0");
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -104,6 +110,9 @@ namespace DuckHunter
 
         public void Pato2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            Pato1_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
+            Pato1_BeginStoryboard.Storyboard.Begin();
+            
             //VERIFICA SE A ARMA FOI RECARREGADA
             if (conte == 0)
             {
@@ -149,7 +158,7 @@ namespace DuckHunter
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
-            
+           
 
             //DIMINUI A QUANTIDADE DE TIROS AO CLICAR O MOUSE
             //VERIFICA SE O CARREGADOR ESTÁ VAZIO
@@ -176,6 +185,8 @@ namespace DuckHunter
         private void Window_TextInput(object sender, TextCompositionEventArgs e)
         {
             //RECARREGA A MUNIÇÃO AO APERTAR A TECLA ESPAÇO
+            //string codigo = Key.Space;
+            //MessageBox.Show("O código da tecla pressionada é: " + codigo);
 
             if (Convert.ToBoolean(Key.Space))
             {
@@ -195,6 +206,19 @@ namespace DuckHunter
 
         private void Pato3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            //System.Windows.Media.Animation.Storyboard novoPato2 = this.Resources["Pato2"] as System.Windows.Media.Animation.Storyboard;
+            //novoPato2.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
+            //Pato2.LoadedBehavior = MediaState.Manual;
+            //Pato2.Position = TimeSpan.FromSeconds(0);
+            //Pato2.LoadedBehavior = MediaState.Play;
+
+
+            //Pato2_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
+
+            
+            
+
+
             //VERIFICA SE A ARMA FOI RECARREGADA
             if (conte == 0)
             {
@@ -549,6 +573,11 @@ namespace DuckHunter
             //VERIFICA SE A ARMA FOI RECARREGADA
             if (conte == 0)
             {
+                
+                //Pato1_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
+                Pato1.LoadedBehavior = MediaState.Play;
+                Pato1_BeginStoryboard.Storyboard.Begin();
+                
                 //EFETUA O PLAY DO DÉCIMO PATO
                 //Pato10.LoadedBehavior = MediaState.Play;
                 //Pato10_BeginStoryboard.Storyboard.Begin();
@@ -615,12 +644,131 @@ namespace DuckHunter
 
 
 
-        public void Pato1_MediaEnded()
+        
+
+        private void Pato1_MediaEnded_1(object sender, RoutedEventArgs e)
+        {
+            if (cont == 0)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+                Pato1.Visibility = Visibility.Visible;
+                //Pato1.Source = Pato10.Source;
+            }
+        }
+
+        private void Pato2_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 1)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato3_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 2)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato4_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 3)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato5_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 4)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato6_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 5)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato7_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 6)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato8_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 7)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato9_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 8)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Pato10_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            if (cont == 9)
+            {
+                lblTenteOutraVez.Visibility = Visibility.Visible;
+                CliqueAqui.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void CliqueAqui_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+            
+        }
+
+        private void CliqueAqui_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             
         }
 
+        private void button_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
 
+        }
 
+        private void Pato4_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+        }
+
+        private void CliqueAqui_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(Application.ResourceAssembly.Location);
+            Application.Current.Shutdown();
+        }
+
+        private void CliqueAqui_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Pato1.LoadedBehavior = MediaState.Play;
+            Pato1_BeginStoryboard.Storyboard.Begin();
+            Iniciar.Visibility = Visibility.Hidden;
+        }
     }
 }
