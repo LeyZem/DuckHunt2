@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
 using System.Diagnostics;
+using System.Windows.Media.Animation;
 
 namespace DuckHunter
 {
@@ -606,9 +607,11 @@ namespace DuckHunter
             {
                 
                 //Pato1_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
-                Pato1.LoadedBehavior = MediaState.Play;
+                Pato1.LoadedBehavior = MediaState.Manual;
                 Pato1_BeginStoryboard.Storyboard.Begin();
-
+                
+                
+                //Pato1.BeginStoryboard.
                 //para o som do décimo pato
                 SomPatoGritando10.Stop();
 

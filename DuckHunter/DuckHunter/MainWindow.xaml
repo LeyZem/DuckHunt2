@@ -148,6 +148,12 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="4"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="-1128"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1386"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="3"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Pato3">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato3">
@@ -249,6 +255,57 @@
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="PatoTESTE">
                 <EasingDoubleKeyFrame KeyTime="0" Value="54"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Pato_Copy1" RepeatBehavior="1x">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-51.932"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1258.8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Pato1" >
+                <EasingDoubleKeyFrame KeyTime="0" Value="36.309"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-1083.941"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.347"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Pato1" >
+                <EasingDoubleKeyFrame KeyTime="0" Value="-28.891"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="-28.891"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="Pato1" >
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.881"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Pato1" >
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.218"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="402"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-212.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Explosao">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Grama_Sem_Fundo2_gif">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.998"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Grama_Sem_Fundo2_gif">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(MediaElement.Volume)" Storyboard.TargetName="Pato1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0.5"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
@@ -430,7 +487,7 @@
                 </TransformGroup>
             </MediaElement.RenderTransform>
         </MediaElement>
-        <MediaElement x:Name="Explosao" LoadedBehavior="Play" Source="file://E:\C\Imagens\explosivo_fundo_azul.gif" Margin="144.526,0,0,-389.72" RenderTransformOrigin="0.5,0.5" Height="78.323" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="72.296" >
+        <MediaElement x:Name="Explosao" LoadedBehavior="Play" Source="file://E:\C\Imagens\explosivo_fundo_azul.gif" Margin="-1172.474,0,0,-164.72" RenderTransformOrigin="0.5,0.5" Height="78.323" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="72.296" >
             <MediaElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -612,7 +669,110 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <MediaElement x:Name="SomSemMunicao" Source="file://E:\C\DuckHunter\Sons\teste.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
-        <MediaElement x:Name="SomRecarregar" Source="file://E:\C\DuckHunter\Sons\teste.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomSemMunicao" Source="file://E:\C\DuckHunter\Sons\SemMunicao.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomRecarregar" Source="file://E:\C\DuckHunter\Sons\Recarrega.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="Pato9_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="-169.119,0,0,18.151" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato9_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato9_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato8_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="235.881,0,0,-164.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato8_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato8_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato6_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="562.881,0,0,-128.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato6_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato6_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato7_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="670.881,0,0,-113.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato7_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato7_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato5_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="997.881,0,0,-107.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato5_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato5_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato10_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="1132.881,0,-104.471,-26.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato10_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato10_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato4_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="88.866,0,0,-125.924" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato4_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato4_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato1_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="-94.119,0,0,-140.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato1_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Initialized="Pato1_Initialized" Loaded="Pato1_Loaded" BufferingEnded="Pato1_BufferingEnded" MediaEnded="Pato1_MediaEnded_1" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+
+
+
+        </MediaElement>
+        <MediaElement x:Name="Pato3_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="778.881,0,0,-149.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato3_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato3_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <MediaElement x:Name="Pato2_Copy" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="385.881,0,0,-140.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato2_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato2_MediaEnded" UnloadedBehavior="Stop" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-28.891"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
     </Grid>
 </Window>

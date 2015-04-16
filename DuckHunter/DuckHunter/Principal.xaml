@@ -10,6 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Duck_Hunt_(VS).png"/>
         </Grid.Background>
+        <MediaElement x:Name="SonInicial" Source="file://E:\C\DuckHunter\Sons\SomInicial.wav" d:IsHidden="True" LoadedBehavior="Play"/>
 
     </Grid>
 </Window>
