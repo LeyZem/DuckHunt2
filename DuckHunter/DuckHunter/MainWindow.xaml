@@ -590,6 +590,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        
         <MediaElement x:Name="SomPatoGritando1" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         <MediaElement x:Name="SomPatoGritando2" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         <MediaElement x:Name="SomPatoGritando3" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
@@ -600,6 +601,13 @@
         <MediaElement x:Name="SomPatoGritando8" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         <MediaElement x:Name="SomPatoGritando9" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         <MediaElement x:Name="SomPatoGritando10" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        
+        <MediaElement x:Name="SomTiro" Source="file://E:\C\DuckHunter\Sons\Tiro.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        
+        <MediaElement x:Name="SomRecarregar" Source="file://E:\C\DuckHunter\Sons\Recarregar.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+
+        <MediaElement x:Name="SomSemMunicao" Source="file://E:\C\DuckHunter\Sons\SemMunicao.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+
         <Button x:Name="Iniciar" Content="INICIAR" Height="66.5" Margin="456,252.631,468,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FF002EFF" Style="{DynamicResource CliqueAqui}" HorizontalAlignment="Center" Width="162" MouseDown="CliqueAqui_MouseDown" MouseLeftButtonDown="CliqueAqui_MouseLeftButtonDown" Click="CliqueAqui_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

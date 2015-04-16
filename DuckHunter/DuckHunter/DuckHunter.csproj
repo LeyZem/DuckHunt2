@@ -117,6 +117,9 @@
     <Resource Include="explosivo_fundo_azul.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Tiro.wav" />
+    <None Include="Resources\SemMunicao.wav" />
+    <None Include="Resources\Recarregar.wav" />
     <Resource Include="Arvore.png" />
     <Resource Include="Duck_Hunt_%28VS%29.png" />
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />

@@ -173,11 +173,14 @@ namespace DuckHunter
             {
                 int var = Convert.ToInt32(Tiros.Content);
                 Tiros.Content = Convert.ToString(var - 1);
+                SomTiro.Play();
+                SomTiro.Position = TimeSpan.FromMilliseconds(1);
             }
             else
             {
                 Reload.Visibility = Visibility.Visible;
                 conte = 1;
+                SomSemMunicao.Play();
             }
         }
 
@@ -199,6 +202,7 @@ namespace DuckHunter
                 Tiros.Content = 8;
                 Reload.Visibility = Visibility.Hidden;
                 conte = 0;
+                SomRecarregar.Play();
             }
         }
 

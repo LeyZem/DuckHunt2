@@ -61,11 +61,29 @@ namespace DuckHunter.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static string ResPato {
+        internal static System.IO.UnmanagedMemoryStream Recarregar {
             get {
-                return ResourceManager.GetString("ResPato", resourceCulture);
+                return ResourceManager.GetStream("Recarregar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream SemMunicao {
+            get {
+                return ResourceManager.GetStream("SemMunicao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Tiro {
+            get {
+                return ResourceManager.GetStream("Tiro", resourceCulture);
             }
         }
     }
