@@ -307,6 +307,26 @@
         </EventTrigger>
     </Window.Triggers>
     <Grid Margin="1,-1,-1,2" Background="#FF43E4FB">
+
+        <MediaElement x:Name="SomPatoNoLago" d:IsHidden="True" >
+            <MediaElement.Triggers>
+                <EventTrigger RoutedEvent="MediaElement.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+
+                                <!-- The MediaTimeline has a RepeatBehavior="Forever" which makes the media play
+                     over and over indefinitely.-->
+                                <MediaTimeline Source="file://E:\C\DuckHunter\Sons\Patos_No_Lago.wav" Storyboard.TargetName="SomPatoNoLago" RepeatBehavior="Forever" />
+
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </MediaElement.Triggers>
+        </MediaElement>
+
+
         <MediaElement x:Name="Pato9" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="-169.119,0,0,18.151" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato9_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato9_MediaEnded" >
             <MediaElement.RenderTransform>
                 <TransformGroup>
@@ -316,11 +336,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato8" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="235.881,0,0,-164.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato8_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato8_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -331,11 +346,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato6" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="562.881,0,0,-128.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato6_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato6_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -346,11 +356,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato7" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="670.881,0,0,-113.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato7_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato7_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -361,11 +366,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato5" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="997.881,0,0,-107.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato5_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato5_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -376,11 +376,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato10" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="1132.881,0,-104.471,-26.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato10_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato10_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -391,11 +386,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato4" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="88.866,0,0,-125.924" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato4_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato4_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -406,11 +396,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato1" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="-94.119,0,0,-140.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato1_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Initialized="Pato1_Initialized" Loaded="Pato1_Loaded" BufferingEnded="Pato1_BufferingEnded" MediaEnded="Pato1_MediaEnded_1" >
             <MediaElement.RenderTransform>
@@ -421,11 +406,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
+
+
+
         </MediaElement>
         <MediaElement x:Name="Pato3" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="778.881,0,0,-149.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato3_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato3_MediaEnded" >
             <MediaElement.RenderTransform>
@@ -436,11 +419,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Pato2" LoadedBehavior="Manual" Source="file://E:\C\DuckHunter\PatoFundoAzul.gif" Margin="385.881,0,0,-140.849" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Pato2_MouseLeftButtonDown" HorizontalAlignment="Left" Width="57.59" Height="118.87" VerticalAlignment="Bottom" Position="0" MediaEnded="Pato2_MediaEnded" UnloadedBehavior="Stop" >
             <MediaElement.RenderTransform>
@@ -451,11 +429,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MediaOpened" >
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" Volume="1"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <MediaElement x:Name="Explosao" LoadedBehavior="Play" Source="file://E:\C\Imagens\explosivo_fundo_azul.gif" Margin="144.526,0,0,-389.72" RenderTransformOrigin="0.5,0.5" Height="78.323" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="72.296" >
             <MediaElement.RenderTransform>
@@ -466,11 +439,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </MediaElement.RenderTransform>
-            <i:Interaction.Triggers>
-                <i:EventTrigger>
-                    <ei:PlaySoundAction Source="file://E:\C\DuckHunter\Sons\Patos_No_Lago.wav"/>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </MediaElement>
         <Image x:Name="Grama_Sem_Fundo2_gif" Margin="-1.5,0,0.5,39" Source="C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\Imagens\Grama.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="138" VerticalAlignment="Bottom">
             <Image.RenderTransform>
@@ -622,6 +590,16 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <MediaElement x:Name="SomPatoGritando1" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando2" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando3" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando4" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando5" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual" />
+        <MediaElement x:Name="SomPatoGritando6" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando7" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando8" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando9" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
+        <MediaElement x:Name="SomPatoGritando10" Source="file://E:\C\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         <Button x:Name="Iniciar" Content="INICIAR" Height="66.5" Margin="456,252.631,468,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FF002EFF" Style="{DynamicResource CliqueAqui}" HorizontalAlignment="Center" Width="162" MouseDown="CliqueAqui_MouseDown" MouseLeftButtonDown="CliqueAqui_MouseLeftButtonDown" Click="CliqueAqui_Copy_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

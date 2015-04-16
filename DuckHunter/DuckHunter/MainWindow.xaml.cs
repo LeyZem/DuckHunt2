@@ -25,13 +25,10 @@ namespace DuckHunter
         public MainWindow()
         {
             InitializeComponent();
-            // Tocar_Som();
             var myCursor = new Cursor(@"C:\Users\Thiago Diniz\Documents\GitHub\DuckHunt2\DuckHunter\DuckHunter\MiraDuckHunt.ani");
             this.Cursor = myCursor;
 
-            //Pato1.Position = TimeSpan.FromSeconds(1);
-
-            
+           
 
         }
         
@@ -68,8 +65,12 @@ namespace DuckHunter
                 //EFETUA O PLAY DO SEGUNDO PATO
                 Pato2.LoadedBehavior = MediaState.Play;
                 Pato2_BeginStoryboard.Storyboard.Begin();
-                Pato2.Volume = Convert.ToInt32("0");
-                
+                //para o som do primeiro pato
+                SomPatoGritando1.Stop();
+                //aciona o som do segundo pato
+                SomPatoGritando2.Play();
+
+
 
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
                 Pato1.Source = Explosao.Source;
@@ -120,10 +121,15 @@ namespace DuckHunter
                 Pato3.LoadedBehavior = MediaState.Play;
                 Pato3_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do segundo pato
+                SomPatoGritando2.Stop();
+                //aciona o som do terceiro pato
+                SomPatoGritando3.Play();
+
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato2.Source = Explosao.Source;
-                Pato2.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -206,18 +212,6 @@ namespace DuckHunter
 
         private void Pato3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            //System.Windows.Media.Animation.Storyboard novoPato2 = this.Resources["Pato2"] as System.Windows.Media.Animation.Storyboard;
-            //novoPato2.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
-            //Pato2.LoadedBehavior = MediaState.Manual;
-            //Pato2.Position = TimeSpan.FromSeconds(0);
-            //Pato2.LoadedBehavior = MediaState.Play;
-
-
-            //Pato2_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
-
-            
-            
-
 
             //VERIFICA SE A ARMA FOI RECARREGADA
             if (conte == 0)
@@ -227,10 +221,15 @@ namespace DuckHunter
                 Pato4.LoadedBehavior = MediaState.Play;
                 Pato4_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do terceiro pato
+                SomPatoGritando3.Stop();
+                //aciona o som do quarto pato
+                SomPatoGritando4.Play();
+
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato3.Source = Explosao.Source;
-                Pato3.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -273,10 +272,14 @@ namespace DuckHunter
                 Pato5.LoadedBehavior = MediaState.Play;
                 Pato5_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do quarto pato
+                SomPatoGritando4.Stop();
+                //aciona o som do quinto pato
+                SomPatoGritando5.Play();
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato4.Source = Explosao.Source;
-                Pato4.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -325,10 +328,14 @@ namespace DuckHunter
                 Pato6.LoadedBehavior = MediaState.Play;
                 Pato6_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do quinto pato
+                SomPatoGritando5.Stop();
+                //aciona o som do sextopato
+                SomPatoGritando6.Play();
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato5.Source = Explosao.Source;
-                Pato5.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -373,10 +380,14 @@ namespace DuckHunter
                 Pato7.LoadedBehavior = MediaState.Play;
                 Pato7_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do sexto pato
+                SomPatoGritando6.Stop();
+                //aciona o som do sétimo pato
+                SomPatoGritando7.Play();
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato6.Source = Explosao.Source;
-                Pato6.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -423,10 +434,14 @@ namespace DuckHunter
                 Pato8.LoadedBehavior = MediaState.Play;
                 Pato8_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do sétimo pato
+                SomPatoGritando7.Stop();
+                //aciona o som do oitavo pato
+                SomPatoGritando8.Play();
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato7.Source = Explosao.Source;
-                Pato7.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -474,10 +489,14 @@ namespace DuckHunter
                 Pato9.LoadedBehavior = MediaState.Play;
                 Pato9_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do oitavo pato
+                SomPatoGritando8.Stop();
+                //aciona o som do nono pato
+                SomPatoGritando9.Play();
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato8.Source = Explosao.Source;
-                Pato8.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -528,10 +547,14 @@ namespace DuckHunter
                 Pato10.LoadedBehavior = MediaState.Play;
                 Pato10_BeginStoryboard.Storyboard.Begin();
 
+                //para o som do nono pato
+                SomPatoGritando9.Stop();
+                //aciona o som do décimo pato
+                SomPatoGritando10.Play();
+
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato9.Source = Explosao.Source;
-                Pato9.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -577,7 +600,10 @@ namespace DuckHunter
                 //Pato1_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
                 Pato1.LoadedBehavior = MediaState.Play;
                 Pato1_BeginStoryboard.Storyboard.Begin();
-                
+
+                //para o som do décimo pato
+                SomPatoGritando10.Stop();
+
                 //EFETUA O PLAY DO DÉCIMO PATO
                 //Pato10.LoadedBehavior = MediaState.Play;
                 //Pato10_BeginStoryboard.Storyboard.Begin();
@@ -585,7 +611,6 @@ namespace DuckHunter
                 //PATO RECEBE A IMAGEM DA EXPLOSÃO
 
                 Pato10.Source = Explosao.Source;
-                Pato10.Volume = 0;
                 cont++;
 
                 //CONTAGEM DE SCORE
@@ -769,6 +794,7 @@ namespace DuckHunter
             Pato1.LoadedBehavior = MediaState.Play;
             Pato1_BeginStoryboard.Storyboard.Begin();
             Iniciar.Visibility = Visibility.Hidden;
+            SomPatoGritando1.Play();
         }
     }
 }
