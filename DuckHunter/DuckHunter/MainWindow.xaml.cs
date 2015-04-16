@@ -181,6 +181,8 @@ namespace DuckHunter
                 Reload.Visibility = Visibility.Visible;
                 conte = 1;
                 SomSemMunicao.Play();
+                SomSemMunicao.Position = TimeSpan.FromMilliseconds(1);
+
             }
         }
 
@@ -197,12 +199,14 @@ namespace DuckHunter
             //string codigo = Key.Space;
             //MessageBox.Show("O código da tecla pressionada é: " + codigo);
 
-            if (Convert.ToBoolean(Key.Space))
+            if (Keyboard.IsKeyDown(Key.Space))
             {
                 Tiros.Content = 8;
                 Reload.Visibility = Visibility.Hidden;
                 conte = 0;
                 SomRecarregar.Play();
+                SomRecarregar.Position = TimeSpan.FromMilliseconds(1);
+
             }
         }
 
