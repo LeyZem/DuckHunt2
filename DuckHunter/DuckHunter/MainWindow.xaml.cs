@@ -835,17 +835,17 @@ namespace DuckHunter
 
         private void CliqueAqui_Copy_Click(object sender, RoutedEventArgs e)
         {
-            Pato1.LoadedBehavior = MediaState.Play;
-            Pato1_BeginStoryboard.Storyboard.Begin();
-            Iniciar.Visibility = Visibility.Hidden;
-            SomPatoGritando1.Play();
+            //Pato1.LoadedBehavior = MediaState.Play;
+            //Pato1_BeginStoryboard.Storyboard.Begin();
+            //Iniciar.Visibility = Visibility.Hidden;
+            //SomPatoGritando1.Play();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Pato1.LoadedBehavior = MediaState.Play;
             Pato1_BeginStoryboard.Storyboard.Begin();
-            Iniciar.Visibility = Visibility.Hidden;
+            //Iniciar.Visibility = Visibility.Hidden;
             SomPatoGritando1.Play();
         }
 

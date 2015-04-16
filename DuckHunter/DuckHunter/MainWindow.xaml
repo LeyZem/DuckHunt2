@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DuckHunter"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="DuckHunter.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="798" Width="1094" WindowState="Maximized" MouseLeftButtonDown="Window_MouseLeftButtonDown" TextInput="Window_TextInput" Loaded="Window_Loaded" KeyDown="Window_KeyDown" >
+        Title="Duck Hunt Game" Height="798" Width="1094" WindowState="Maximized" MouseLeftButtonDown="Window_MouseLeftButtonDown" TextInput="Window_TextInput" Loaded="Window_Loaded" KeyDown="Window_KeyDown" >
     <Window.Resources>
         <Storyboard x:Key="Pato1" RepeatBehavior="1x">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Pato1">
@@ -603,15 +603,6 @@
         <MediaElement x:Name="SomPatoGritando10" Source="C:\Duck Hunter\DuckHunt2\DuckHunter\Sons\Pato_Gritando.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         
         <MediaElement x:Name="SomTiro" Source="C:\Duck Hunter\DuckHunt2\DuckHunter\Sons\Tiro.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
-
-        <Button x:Name="Iniciar" Content="INICIAR" Height="66.5" Margin="456,252.631,468,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Black" Foreground="#FF002EFF" Style="{DynamicResource CliqueAqui}" HorizontalAlignment="Center" Width="162" MouseDown="CliqueAqui_MouseDown" MouseLeftButtonDown="CliqueAqui_MouseLeftButtonDown" Click="CliqueAqui_Copy_Click">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFEEEEEE" Offset="0.155"/>
-                    <GradientStop Color="#FF11F3CA" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
         <MediaElement x:Name="SomSemMunicao" Source="C:\Duck Hunter\DuckHunt2\DuckHunter\Sons\teste.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
         <MediaElement x:Name="SomRecarregar" Source="C:\Duck Hunter\DuckHunt2\DuckHunter\Sons\teste.wav" d:IsHidden="True" LoadedBehavior="Manual"/>
     </Grid>
