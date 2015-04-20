@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("tempo_26_seg.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mallard%20duck%20quacks-soundbible.com-289141159.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("patos_no_lago.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pato_gritando.wav")]

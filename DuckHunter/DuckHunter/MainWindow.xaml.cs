@@ -25,7 +25,7 @@ namespace DuckHunter
         public MainWindow()
         {
             InitializeComponent();
-            var myCursor = new Cursor(@"C:\Duck Hunter\DuckHunt2\DuckHunter\DuckHunter\MiraDuckHunt.ani");
+            var myCursor = new Cursor(@"C:\Users\Thiago Diniz\Documents\GitHub\Duck\DuckHunter\DuckHunter\MiraDuckHunt.ani");
             this.Cursor = myCursor;
 
            
@@ -111,8 +111,7 @@ namespace DuckHunter
 
         public void Pato2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Pato1_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
-            Pato1_BeginStoryboard.Storyboard.Begin();
+            //Pato1_BeginStoryboard.Storyboard.FillBehavior = System.Windows.Media.Animation.FillBehavior.Stop;
             
             //VERIFICA SE A ARMA FOI RECARREGADA
             if (conte == 0)
@@ -645,6 +644,7 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
             }
         }
 
@@ -695,6 +695,7 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
 
             }
         }
@@ -708,6 +709,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -720,6 +723,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -732,6 +737,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -744,6 +751,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -756,6 +765,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -768,6 +779,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -780,6 +793,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -792,6 +807,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 
@@ -804,6 +821,8 @@ namespace DuckHunter
                 this.IsEnabled = false;
                 Score ScoreView = new Score(Convert.ToString(lblScore.Content));
                 ScoreView.Show();
+                SomInicial.Play();
+
             }
         }
 

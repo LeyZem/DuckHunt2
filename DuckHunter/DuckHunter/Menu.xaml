@@ -6,7 +6,100 @@
         xmlns:local="clr-namespace:DuckHunter"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Class="DuckHunter.Menu"
         mc:Ignorable="d"
-        Title="Menu" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+        Title="Menu" Height="600" Width="800" WindowStyle="None" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" TextInput="Window_TextInput">
+    <Window.Resources>
+        <Storyboard x:Key="INICIO" >
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Lago2_jpg">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5.25"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="-854"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Lago2_jpg">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="189"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Lago2_jpg">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.024"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="3.198"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Lago2_jpg">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.01"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="3.916"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="PatoInicio_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-243.884"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="-243.884"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="-335.384"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:24" Value="-336.717"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:24.4" Value="-244.05"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Tronco_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-222"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="PatoInicio_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-34.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="-31.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:20" Value="-45"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:24" Value="-44.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:24.4" Value="-32.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Tronco_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-27.246"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="PatoInicio_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="4.627"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="PatoInicio_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5.033"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Tronco_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5.12"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Tronco_png">
+                <EasingDoubleKeyFrame KeyTime="0" Value="5.491"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="PatoInicio_png">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:18" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:24.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:25.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Tronco_png">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:18" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:25.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0:0:25.9" Value="1116"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Explosao">
+                <EasingDoubleKeyFrame KeyTime="0:0:25.9" Value="564"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Mira_png">
+                <EasingDoubleKeyFrame KeyTime="0:0:22" Value="64"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23" Value="1261.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Mira_png">
+                <EasingDoubleKeyFrame KeyTime="0:0:22" Value="-232"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:23" Value="-2268"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Mira_png">
+                <DiscreteObjectKeyFrame KeyTime="0:0:23" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:25.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Explosao">
+                <DiscreteObjectKeyFrame KeyTime="0:0:25.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Lago2_jpg">
+                <DiscreteObjectKeyFrame KeyTime="0:0:18" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:25.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource INICIO}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
@@ -22,10 +115,61 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label x:Name="lblGameA" Grid.ColumnSpan="2" Content="Game A        1  DUCK" HorizontalAlignment="Left" Margin="267,0,0,177.04" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblGameA_MouseLeftButtonDown"/>
-        <Label x:Name="lblGameB" Grid.ColumnSpan="2" Content="Game b       2  DUCKS" HorizontalAlignment="Left" Margin="267,0,0,129.033" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333"/>
-        <Label x:Name="lblQuit" Grid.ColumnSpan="2" Content="QUIT" Margin="363,0,341.083,31.033" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblQuit_MouseLeftButtonDown"/>
-        <Label x:Name="lblSobre" Grid.ColumnSpan="2" Content="SOBRE" Margin="0,0,28,31.033" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblSobre_MouseLeftButtonDown" HorizontalAlignment="Right" Width="103.917"/>
+        <Label x:Name="lblGameA" Grid.ColumnSpan="2" Content="Game A        1  DUCK" HorizontalAlignment="Left" Margin="267,0,0,177.04" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblGameA_MouseLeftButtonDown" Cursor="Hand"/>
+        <Label x:Name="lblGameB" Grid.ColumnSpan="2" Content="Game b       2  DUCKS" HorizontalAlignment="Left" Margin="267,0,0,129.033" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" Cursor="Hand"/>
+        <Label x:Name="lblQuit" Grid.ColumnSpan="2" Content="QUIT" Margin="363,0,341.083,31.033" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblQuit_MouseLeftButtonDown" Cursor="Hand"/>
+        <Label x:Name="lblSobre" Grid.ColumnSpan="2" Content="SOBRE" Margin="0,0,28,31.033" VerticalAlignment="Bottom" Foreground="#FFCB5529" FontFamily="Showcard Gothic" FontSize="29.333" MouseLeftButtonDown="lblSobre_MouseLeftButtonDown" HorizontalAlignment="Right" Width="103.917" Cursor="Hand"/>
+        <MediaElement x:Name="SomInicial" Source="C:\Users\Thiago Diniz\Documents\GitHub\Duck\DuckHunter\Sons\SomInicial.wav" d:IsHidden="True" LoadedBehavior="Play" Volume="1"/>
+        <Image x:Name="Lago2_jpg" Grid.ColumnSpan="2" Margin="0,0,10,0" Source="Lago2.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" TextInput="Lago2_jpg_TextInput">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="PatoInicio_png" Grid.ColumnSpan="2" Margin="866.713,274.914,-86.467,302.488" Source="PatoInicio.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="Tronco_png" Grid.ColumnSpan="2" Margin="832.083,266.799,-52.433,312.957" Source="Tronco.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <MediaElement x:Name="Explosao" LoadedBehavior="Play" Source="C:\Users\Thiago Diniz\Documents\GitHub\Duck\DuckHunter\DuckHunter\explosivo_fundo_azul.gif" Margin="1032.526,0,-304.822,-333.72" RenderTransformOrigin="0.5,0.5" Height="78.323" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="72.296" Grid.ColumnSpan="2" MediaEnded="Explosao_MediaEnded" >
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.622"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
+        <Image x:Name="Mira_png" Margin="-1026,2194,449.8,-2170.2" Source="Mira.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>

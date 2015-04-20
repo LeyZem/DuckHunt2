@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -132,12 +133,17 @@
     <Resource Include="explosivo_fundo_azul.gif" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Tempo_26_Seg.wav" />
+    <Resource Include="Tronco2.png" />
+    <Resource Include="Tronco.png" />
     <None Include="Resources\Tiro.wav" />
     <None Include="Resources\SemMunicao.wav" />
     <None Include="Resources\Recarregar.wav" />
     <Resource Include="Arvore.png" />
     <Resource Include="CAPA.jpg" />
     <Resource Include="DH.jpg" />
+    <Resource Include="Lago.jpg" />
+    <Resource Include="Lago2.jpg" />
     <Content Include="Mallard Duck Quacks-SoundBible.com-289141159.wav" />
     <Resource Include="Pato.png" />
     <Resource Include="P5 05.png" />
@@ -150,6 +156,9 @@
     <Resource Include="P2 02.png" />
     <Resource Include="P3 03.png" />
     <Resource Include="P4 04.png" />
+    <Resource Include="PatoInicio.png" />
+    <Resource Include="PatoInicio2.png" />
+    <Resource Include="Mira.png" />
     <Content Include="Patos_No_Lago.wav" />
     <Content Include="Pato_Gritando.wav" />
   </ItemGroup>
